@@ -1,0 +1,431 @@
+<html>
+<head>
+<title>Parsnip Fanpage</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,170;1,170&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,900;1,00&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+<link rel="icon" href="parsnipicon.png"style="image/x-icon">
+<style>
+body {
+	margin:0;
+} 
+.parallax{
+  display:flex;
+  justify-content:center;
+  align-items: center;
+  position:relative;
+  min-height: 560px; 
+  overflow: hidden;
+} 
+.parallax::before {
+	content: "";
+	position:absolute;
+	width: 100%;
+    height: 100%;
+	background-image: url("pars.jpg");
+    background-size: cover;
+    background-position: center;
+    opacity: 0.4;
+	z-index: 0;
+}
+
+.parallax .content{
+    position: relative;
+    z-index: 1;
+    padding: 20px;
+	text-shadow: 2px 2px 4px rgba(0, 0, 100, 0.8);
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    opacity: 1;
+    font-weight: 170;
+    font-style: normal;
+    font-size: 30px;
+    color: navy;
+    position: absolute;
+    text-align: center;
+}
+
+hr.custom {
+  border: 1px solid navy;
+  width: 205px;
+}
+.bc {
+	position: absolute;
+	top: 170;
+	left: 50;
+	width: 320px;
+	height: 50px;
+	background-color: rgba(0,0,0,0);
+}
+
+.butona{
+  float:right;
+  width: 150px;
+  position: relative;
+  border: 3px solid navy;
+  background-color: rgba(0,0,0,0);
+  text-align: center;
+  color: navy;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  transition: background-color 1s;
+  transition-timing-function: ease;
+}
+.butonb{
+  float:left;
+  width: 150px;
+  position: relative;
+  border: 3px solid navy;
+  background-color: navy;
+  text-align: center;
+  color: #fdfddc;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  transition: background-color 1s;
+  transition-timing-function: ease;
+}
+.butondiv{
+  width: 150px;
+  position: absolute;
+  top:380px;
+  left:150px;
+  border: 3px solid #fdfddc;
+  background-color: #fdfddc;
+  text-align: center;
+  color: navy;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  transition: background-color 1s;
+  transition-timing-function: ease;
+}
+.butondiva{
+	width:150px;
+	position:absolute;
+	top: 380px;
+	right:150px;
+	border: 3px solid #336699;
+	background-color: #336699;
+	text-align: center;
+	color: #fdfddc;
+	padding: 14px 28px;
+	font-size: 16px;
+	cursor: pointer;
+	font-family: "Playfair Display", serif;
+	font-weight: 400;
+	font-style: normal;
+	transition: background-color 1s;
+	transition-timing-function: ease;
+}
+.butona:hover {
+  background-color: navy;
+  color: #fdfddc;
+}
+.butonb:hover {
+  background-color: rgba(0,0,0,0);
+  color: navy;
+}
+.butondiv:hover{
+	background-color: navy;
+	color:#fdfddc;
+}
+.butondiva:hover{
+	background-color: #fdfddc;
+	color: #336699;
+}
+.logoimg {
+	position: absolute;
+	top: -10;
+	width:120px;
+	box-shadow: 0px 0px 40px 5px rgba(0,0,70,0.3);
+	border: 2px solid navy;
+}
+.scrolla {
+	position: relative;
+	font-color: white;
+	min-height:560px;
+	background-color:navy;
+	font-size:36px;
+	scroll-behavior: smooth;
+}
+.scrolla .correcthtext{
+	
+	position: absolute;
+	text-shadow: 3px 3px 15px #fdfddc;
+	top:50px;
+	left: 80px;
+	letter-spacing: 5px;
+	font-size: 50px;
+	color: #fdfddc;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+.scrolla .correctptext{
+	position: absolute;
+	top: 150px;
+	left:150px;
+	font-size: 20px;
+	color: #fdfddc;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+}
+.farmerimg{
+	box-shadow: 3px 3px 15px #fdfddc;
+	border: 10px solid #fdfddc;
+	position:absolute;
+	top: 140px;
+	right: 40px;
+	width: 300px;
+	transition: border 2s, box-shadow 2s, width 2s;
+}
+.farmerimg:hover{
+	width: 320px;
+	box-shadow: 7px 0px 30px white;
+	border: 0px solid white;
+}
+.scrollimg{
+	position: absolute;
+	top: 480px;
+	width:40px;
+	border-radius: 100px;
+	box-shadow: 0px 0px 40px 5px rgba(0,0,70,0.6)
+}
+.scrollimgcap{
+	position: absolute;
+	top:480px;
+	font-size: 30px;
+	color: rgba(0,0,0,0);
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: bold;
+	cursor: default;
+	transform: font-size 0.5s, color 0.5s, top 0.5s;
+}
+.scrollimgcap:hover{
+	font-size: 10px;
+	color: navy;
+	top: 465px;
+}
+.parraa{
+  display:flex;
+  justify-content:center;
+  align-items: center;
+  position:relative;
+  min-height: 560px; 
+  overflow: hidden;
+} 
+.paraa::before {
+	content: "";
+	position:absolute;
+	width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.4;
+	z-index: 0;
+}
+
+.parraa.content{
+    position: relative;
+    z-index: 1;
+    padding: 20px;
+	text-shadow: 2px 2px 4px rgba(0, 0, 100, 0.8);
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    opacity: 1;
+    font-weight: 170;
+    font-style: normal;
+    font-size: 30px;
+    color: navy;
+    position: absolute;
+    text-align: center;
+}
+.parraa p{
+	border: 10px solid #fdfddc;
+	padding: 40px;
+	border-height: 100px;
+	background-color: navy;
+	font-family: "Playfair Display", serif;
+    font-weight: 170;
+    font-style: normal;
+    font-size: 70px;
+	color: #fdfddc;
+	text-align: center;
+}
+.scrollb {
+	position: relative;
+	font-color: white;
+	min-height:560px;
+	background-image:url("zigzag.png");
+	font-size:36px;
+	scroll-behavior: smooth;
+}
+.scrollb .correcthtext{
+	position: absolute;
+	text-shadow: 3px 3px 15px white;
+	top:40px;
+	right: 80px;
+	letter-spacing: 5px;
+	font-size: 40px;
+	color: navy;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+.scrollb .correctptext{
+	position: absolute;
+	font-size: 20px;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+}
+.prta{
+	position:absolute;
+	top:2px;
+	left: 320px;
+	font-family: Playfair Display;
+	font-weight: 400;
+	font-size: 240px;
+	z-index: 3;
+	color: #fdfddc;
+	text-shadow: 2px 2px 4px rgba(0, 0, 100, 0.8);
+}
+.prtb{
+	position:absolute;
+	top:220px;
+	left: 72px;
+	font-family: Playfair Display;
+	font-weight: 400;
+	font-size: 240px;
+	z-index: 3;
+	color: #fdfddc;
+	text-shadow: 2px 2px 4px rgba(0, 0, 100, 0.8);
+}
+.parrab{
+  display:flex;
+  justify-content:center;
+  align-items: center;
+  position:relative;
+  min-height: 560px; 
+  overflow: hidden;
+} 
+.parrab::before {
+	content: "";
+	position:absolute;
+	width: 100%;
+    height: 100%;
+    background-image: url("finalparsimg.jpg");
+    opacity: 0.4;
+	z-index: 0;
+}
+
+.parrab.content{
+    position: relative;
+    z-index: 1;
+    padding: 20px;
+	text-shadow: 2px 2px 4px rgba(0, 0, 100, 0.8);
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    opacity: 1;
+    font-weight: 170;
+    font-style: normal;
+    font-size: 30px;
+    color: navy;
+    position: absolute;
+    text-align: center;
+}
+.parrab p{
+	z-index: 1;
+	opacity: 1;
+	border: 10px solid #fdfddc;
+	padding: 40px;
+	border-height: 100px;
+	background-color: #fdfddc;
+	font-family: "Montserrat", sans-serif;
+    font-weight: 170;
+    font-style: normal;
+    font-size: 70px;
+	color: navy;
+	text-align: center;
+}
+</style>
+</head>
+<body>
+<div class="parallax">
+	<img class="logoimg" src="parsnipicon.png" alt="logo">
+	<div class="content">
+		<div class="bc">
+			<button class="butona" onclick="window.location.href = '#'">See Images</button>
+			<button class="butonb">About</button>
+		</div>
+		<p style="font-weight: 400; font-size: 12px; text-shadow: none;"><b><i>By Thomas Etherington</i></b></p>
+		<hr class="custom">
+		<p>THE PARSNIP FANPAGE</p>
+	</div>
+	<img class="scrollimg"src="scrolldown-removebg-preview.png" alt="scrolldownimage">
+	<span class="scrollimgcap">Scroll Down...</span>
+</div>
+<div class="scrolla">
+	<span class="correcthtext">The History of Parnsnips</span>
+	<hr style="position:absolute; top: 110px; left: 80px; border: 1px solid #fdfddc; width: 500px;">
+	<span class="correctptext"><mark style="background-color: #fdfddc; color:navy;"><i>Parsnips</i> are ancient root vegetables native to <i>Europe</i><br>and <i>Western Asia</i>, cultivated for thousands<br>of years and historically used as both food<br>and sweetener.</mark></span>
+	<hr style="position:absolute; top: 265px; left: 80px; border: 1px solid #fdfddc; width: 200px;">
+	<img class="farmerimg" src="farmingparsnips.jpg" alt="Medieval Farmers">
+	<span style="font-family: Playfair Display, serif; font-weight:100; font-size: 15px; position: absolute; top:460px; right: 120px; color:#fdfddc; text-shadow: 3px 3px 15px #fdfddc;"><i>Medieval Farmers; collecting parsnips</i></span>
+	<span style="font-family: Montserrat, sans-serif; font-weight:170; font-size: 35px; position: absolute; top:300px; left: 80px; color:#fdfddc; text-shadow: 3px 3px 15px #fdfddc;"><i>Related Links:</i></span>
+	<button class="butondiv" onclick="window.location.href='history.html'">History</button>
+</div>
+<div class="parraa" style="background-image: url('paratwoimg.jpg')">
+	<div class="content">
+			<p>A Vegetable Icon</p>
+	</div>
+</div>
+<div class="scrollb">
+	<span class="correcthtext" style="top:40px; right:80px">Parsnip Recipes</span>
+	<img src="parsnipmeals.png" alt="Parsnip Meal" style="position:absolute; left:65px; top:75px; max-width: 200px">
+	<img src="parsnipsoup.png" alt="Parsnip Soup" style="position:absolute; left:250px; top:300px; max-width: 250px">
+	<span class="prta">P</span>
+	<span class="prtb">R</span>
+	<hr style="position:absolute; top: 100px; right: 0px; border: 1px solid #336699; width: 400px;">
+	<span class="correctptext" style="top: 150px; right: 150px; width: 290px; text-align: right;"><mark style="background-color: #336699; color: #fdfddc">Since Parsnips are such a multifaceted variety of vegetables; it allows for a plethora of culinary tastes to be satisfied</mark></span>
+	<span style="font-family: Montserrat, sans-serif; font-weight:170; font-size: 35px; position: absolute; top:300px; right: 220px; color:#336699; text-shadow: 3px 3px 15px #fdfddc;"><i>Related Links:</i></span>
+	<button class="butondiva">Recipes</button>
+</div>
+<div class="parrab">
+	<div class="content">
+			<p>We <mark style="background-color: navy; color: #fdfddc;">Love</mark> Parsnips</p>
+	</div>
+</div>
+<div style="display:flex;position:relative;min-height: 150px; overflow: hidden; font-family: Montserrat, sans-serif; font-weight: 170; color: #fdfddc; background-color: navy">
+	<h1>Made by Thomas Etherington</h1>
+	<p>If you liked this website and like parsnips; why don't you see where to buy some here</p>
+</div>
+</body>
+</html>
